@@ -1,0 +1,161 @@
+body {
+    text-align: center;
+    font-family: "Inter", sans-serif !important;
+    margin: 0;
+    padding: 0;
+    font-feature-settings: "cv12", "cv13", "ss02", "ss03", "cv06", "cv10";
+    background-color: white;
+}
+
+h1 {
+    color: #70b584;
+    font-weight: 900;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+    text-shadow: 2px 4px 5px rgba(0, 69, 43, 0.1);
+}
+
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #70b584;
+    border: 1px solid #70b584;
+    color: white;
+    padding: 11px 23px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    margin: 15px;
+    width: 70%;
+    box-shadow: 2px 4px 9px rgba(0, 69, 43, 0.15);
+}
+
+img {
+    box-shadow: 4px 6px 9px rgba(0, 69, 43, 0.2);
+}
+
+#header {
+    padding-bottom: 15px;
+}
+
+#container {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px 0px;
+    border-radius: 12px;
+}
+
+#links {
+    padding: 15px 0px;
+    border-top: dashed #70b584;
+    border-bottom: dashed #70b584;
+    background-position: center;
+}
+
+#footer {
+    margin-top: 22px;
+}
+
+.popuptext {
+    visibility: visible;
+    width: 350px;
+    margin-left: -175px;
+    font-size: 15px;
+    background-color: #3f5c6d;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    box-shadow: 4px 7px 32px rgba(0, 24, 33, 1);
+}
+
+.popup .show {
+    visibility: visible;
+    opacity: 0;
+    animation: fade 5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+::selection {
+    color: white;
+    background: #70b584;
+}
+
+.button::selection {
+    color: #70b584;
+    background: white;
+}
+
+@media only screen and (min-width: 850px) {
+    body {
+        background-image: url("images/bg.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #container {
+        width: 50%;
+        border: solid #70b584 5px;
+        box-shadow: 4px 7px 32px rgba(0, 24, 33, 1);
+    }
+
+    h1 {
+        letter-spacing: 1px;
+        word-spacing: 3px;
+        font-size: 48px;
+    }
+
+    #links {
+        background-image: none;
+        border-top: dashed #70b584;
+        border-bottom: dashed #70b584;
+    }
+
+    .button {
+        width: 50%;
+        font-size: 18px;
+    }
+
+    .button:hover {
+        background-color: #63a882;
+        color: white;
+        border: 1px solid #63a882;
+    }
+
+    .popuptext {
+        width: 400px;
+        margin-left: -200px;
+        font-size: 18px;
+        bottom: 50px;
+    }
+
+}
